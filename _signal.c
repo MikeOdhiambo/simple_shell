@@ -4,7 +4,7 @@
   * _sigint - reprompts
   * @signal: signal passed
   */
-void _sigint(int signal __attribute__((unused)))
+void _sigint(__attribute__((unused)) int signal)
 {
 	fflush(STDIN_FILENO);
 	write(STDERR_FILENO, "\n$ ", 3);
