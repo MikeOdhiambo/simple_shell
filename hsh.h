@@ -26,10 +26,11 @@
 #include "types.h"
 
 extern char **environ;
-
+/* Read user input */
 bool read_input(info_t *info);
 quote_state_t _read_input(char **lineptr, int fd);
 
+/* Process user input */
 int parse(info_t *info);
 
 int execute(info_t *info);
